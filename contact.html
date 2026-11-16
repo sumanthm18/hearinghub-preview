@@ -179,6 +179,10 @@ p { text-wrap: pretty; }
 .place--main .btn { background: var(--on-plum); border-color: var(--on-plum); color: var(--plum); }
 .place--main .btn:hover { background: var(--stone-deep); border-color: var(--stone-deep); color: var(--plum-deep); }
 .place--main .soft { color: var(--on-plum-soft); }
+.site-photos { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(12px, 2vw, 24px); }
+.site-photos figure { margin: 0; border-radius: var(--r-panel); overflow: hidden; background: var(--linen); aspect-ratio: 4 / 3; }
+.site-photos img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 640px) { .site-photos { grid-template-columns: 1fr; } }
 .place-tag { font-weight: 700; font-size: var(--text-sm); color: var(--teal-deep); }
 .place--main .place-tag { color: var(--teal); }
 .phone-big { font-family: var(--font-display); font-weight: 800; font-size: 1.9rem; text-decoration: none; }
@@ -355,6 +359,14 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
         <address>260 Newcastle Street, East Maitland NSW 2323</address>
         <p class="soft">By appointment. Call or text <a href="tel:+61434924410">0434 924 410</a>.</p>
         <a href="https://www.google.com/maps/search/?api=1&amp;query=260+Newcastle+Street+East+Maitland+NSW+2323">Open in Google Maps</a>
+      </div>
+    </div>
+    <div class="stack">
+      <h2>Finding the Belmont clinic</h2>
+      <p class="soft">The clinic is in the grey brick building at 30 Glover Street, with a ramp up to the entrance.</p>
+      <div class="site-photos">
+        <figure><img src="assets/belmont-ramp.jpg" alt="The grey brick building at 30 Glover Street, Belmont, with the number 30 on the wall and a ramp with handrails leading to the entrance" width="1400" height="1050" loading="lazy"></figure>
+        <figure><img src="assets/belmont-front.jpg" alt="The front of the building at 30 Glover Street, Belmont, behind a white timber fence and lawn" width="1400" height="1050" loading="lazy"></figure>
       </div>
     </div>
   </div>
