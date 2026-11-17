@@ -352,9 +352,9 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
           <h2 id="s2">What do you need?</h2>
           <fieldset class="choices">
             <legend class="soft" style="font-weight:400;margin-bottom:10px">Choose the closest match.</legend>
-            <label class="choice"><input type="radio" name="type" value="Hearing assessment" checked><span><strong>Hearing assessment</strong><small>About 30 minutes. Results explained straight away.</small></span></label>
+            <label class="choice"><input type="radio" name="type" value="Hearing assessment" checked><span><strong>Hearing assessment</strong><small>About an hour and a half. Results explained straight away.</small></span></label>
             <label class="choice"><input type="radio" name="type" value="Love it or Leave it trial"><span><strong>Love it or Leave it trial</strong><small>Starts with a free assessment, then a 90-day trial</small></span></label>
-            <label class="choice"><input type="radio" name="type" value="Hearing aid fitting or review"><span><strong>Hearing aid fitting or review</strong><small>Fitting, adjustments and check-ups</small></span></label>
+            <label class="choice"><input type="radio" name="type" value="Hearing aid fitting or review"><span><strong>Hearing aid fitting or review</strong><small>Fitting, adjustments and check-ups. Annual reviews take about 1 hour 15 minutes.</small></span></label>
             <label class="choice"><input type="radio" name="type" value="Repair, batteries or accessories"><span><strong>Repair, batteries or accessories</strong><small>Servicing, batteries and replacement parts</small></span></label>
           </fieldset>
           <div class="field"><label for="funding">How is your care funded?</label>
@@ -364,7 +364,7 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
 
         <section class="step" data-step="3" aria-labelledby="s3" hidden>
           <h2 id="s3">Choose a day and time</h2>
-          <p class="soft">Belmont clinic, Glover St Surgery. Thursdays and Fridays, 7:30am to 5:00pm.</p>
+          <p class="soft">Belmont Specialist Centre, 30 Glover Street. Thursdays and Fridays, 7:30am to 5:00pm.</p>
           <fieldset><legend>Day</legend><div class="chips" id="days" style="margin-top:10px"></div></fieldset>
           <fieldset id="times-wrap" hidden><legend>Time</legend><div class="chips" id="times" style="margin-top:10px"></div></fieldset>
           <p class="error" id="slot-error" hidden></p>
@@ -411,7 +411,7 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
       <div class="place place--main">
         <span class="place-tag">Where</span>
         <h3>Belmont clinic</h3>
-        <address>Glover St Surgery<br>30 Glover Street, Belmont NSW 2280</address>
+        <address>Belmont Specialist Centre<br>30 Glover Street, Belmont NSW 2280</address>
         <a class="phone-big" href="tel:+61434924410">0434 924 410</a>
       </div>
       <div class="place">
@@ -429,7 +429,7 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
   <div class="foot-grid">
     <div class="foot-logo"><img src="assets/e82f1d3b.svg" alt="The Hearing Hub" width="604" height="96"><p>Independently owned and operated. An accredited hearing service provider.<br>Andrew McKenna, audiometrist (DipAud), MACAud.<br>NSW SIRA provider 50161.</p></div>
     <div><h2>Clinics</h2><ul>
-      <li><strong>Belmont</strong> (book online)<br>Glover St Surgery, 30 Glover Street, Belmont NSW 2280</li>
+      <li><strong>Belmont</strong> (book online)<br>Belmont Specialist Centre, 30 Glover Street, Belmont NSW 2280</li>
       <li><strong>East Maitland</strong> (by appointment)<br>260 Newcastle Street, East Maitland NSW 2323</li>
       <li><strong>Home visits</strong><br>Across Newcastle, Lake Macquarie and the Hunter, at no extra cost</li>
     </ul></div>
@@ -535,7 +535,7 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
 
   function checked(name) { return form.querySelector('input[name=' + name + ']:checked').value; }
   function review() {
-    var rows = [['Visit', checked('type')], ['Funding', $('funding').value], ['Where', 'Belmont clinic, Glover St Surgery, 30 Glover Street'],
+    var rows = [['Visit', checked('type')], ['Funding', $('funding').value], ['Where', 'Belmont Specialist Centre, 30 Glover Street'],
       ['When', fmtLong.format(pick.day) + ' at ' + pick.time], ['Name', val('b-first') + ' ' + val('b-last')], ['Mobile', val('b-phone')]];
     if (val('b-email')) rows.push(['Email', val('b-email')]);
     rows.push(['Patient', $('b-existing').value]);
